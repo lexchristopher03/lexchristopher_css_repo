@@ -76,7 +76,7 @@ ul {
   
   div:hover {
     width: 300px; /*then, using a pseudo class, we can change the property, the transition will smooth the change*/
-    background-color: blue;
+    background-color: black;
     font-size: 32px;
   }
 
