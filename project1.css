@@ -83,7 +83,7 @@ ul {
   /* when you click on text */
  li a:active{
     background-color: white;
-    color: black;
+    color: lightblue;
 } 
 
 
