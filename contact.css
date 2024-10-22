@@ -1,50 +1,97 @@
-/* Basic reset for box-sizing */
-* {
-  box-sizing: border-box;
+/* Styling for horizontal navbar */
+/*  */
+/* 
+li a:hover {
+  background-color: #75B9BE; /* Background color of navbar when hovering */
+  /* font-size: 20px; */
+/* }  */
+
+/* Target hover effect only for the navigation bar's list items */
+
+
+/* Remove the generic div hover rule */
+
+
+/* when you click on text */
+
+
+/* Media query */
+@media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li a {
+    width: 100vw;
+  }
 }
 
-/* Navigation bar styles */
-nav {
-  /* background-color: #333; Dark background */
-  /* padding: 10px;
-  text-align: center; */
-    list-style-type: none;
-    margin: 0;
-    padding: 10px; /*this value changes the height of our navbar*/
-    overflow: hidden;
-    background-color: #A8CCC9; /*background color of the navbar*/
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul {
-  list-style-type: none;
+/* Styling for horizontal navbar */
+/* ul { */
+  /* list-style-type: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 10px; /* Changes the height of the navbar */
+  /* overflow: hidden; */
+  /* background-color: #A8CCC9; Background color of the navbar */
+  /* display: flex; */
+  /* justify-content: flex-end; */ 
+/* } */
 
-nav ul li {
-  /* Make items appear inline */ 
-  display: inline-block; 
-  margin-right: 15px; 
-  
-}
+/* body {
+  margin: 0;
+  background-color: #B3D6C6;
+} */
 
-nav ul li a {
-  color: white; /* White text */
-  text-decoration: none; /* Remove underline */
-  font-family: 'Teko', sans-serif; /* Ensure consistent font */
-  font-size: 1.2rem;
-}
+/* li {
+  float: right;
+  margin-right: 30px;
+} */
 
-nav ul li a:hover {
-  /* text-decoration: underline; Underline on hover */
-  background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
-  font-size: 20px;;
+/* li a { */
+  /* color: white; Text color of navbar links */
+  /* font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s ease; */
+/* } */
 
-}
+/* li a:hover {
+  /* background-color: #75B9BE; Background color of navbar when hovering */
+  /* font-size: 20px; */
+/* } */ 
 
-/* Optional: Add a hover effect for active page */
-nav ul li a.active {
-  border-bottom: 2px solid white; /* Optional active state */
-}
+/* Target hover effect only for the navigation bar's list items */
+/* nav ul li:hover { */
+  /* font-size: 20px; */
+/* } */
+
+/* Remove the generic div hover rule */
+/* div:hover { */
+  /* Remove this rule entirely or comment it out */
+  /* width: 300px;
+  background-color: lightblue;
+  font-size: 32px; */
+/* } */
+
+/* when you click on text */
+/* li a:active { */
+  /* background-color: white; */
+  /* color: lightblue; */
+/* } */
+
+/* Media query */
+/* @media screen and (max-width: 480px) {
+  body {
+    background-color: lightgreen;
+  }
+  ul {
+    flex-direction: column;
+  }
+  li a {
+    width: 100vw; */
+  /* } */
+/* } */
