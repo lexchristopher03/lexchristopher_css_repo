@@ -74,11 +74,11 @@ ul {
     transition: width 2s, background-color 1s; /*must set: which property you want to transition and how much*/
   /* } */ 
   
-  div:hover {
+  /* div:hover {
     width: 300px; /*then, using a pseudo class, we can change the property, the transition will smooth the change*/
-    background-color: lightblue;
-    font-size: 32px;
-  }
+    /* background-color: lightblue; */
+    /* font-size: 32px; */
+  /* } */ 
 
   /* when you click on text */
  li a:active{
