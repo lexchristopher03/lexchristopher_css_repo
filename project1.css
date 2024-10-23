@@ -1,100 +1,111 @@
-/* basic start with nav bar- testing to see if we can see on group repo page */
 
-/* styling for horizontal navbar */
+
+/* styling for navbar */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px; /*this value changes the height of our navbar*/
-    overflow: hidden;
-    background-color: #A8CCC9; /*background color of the navbar*/
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  body{
-    margin:0;
-    background-color: #B3D6C6;
-  }
-
-
-
-  li {
-    float: right;
-    display: right; /* this makes our navbar horizontal, without it it will be vertical (block) by default */
-    margin-right: 30px;
-  }
-
-  li a {
-    outline: none;
-    border: none;
-    color: white; /*text color of the navbar links*/
-    font-family: "Protest Strike", sans-serif;
-    text-align: center;
-    /* margin: 0; */
-    padding: 10px;
-    /*^ first number: vertical padding (for horizontal nav we want it to take up the whole height of the parent--ul--so we use 100%)
-        second number: horizontal padding (change this number to change space between links)*/ 
-    
-        /* get ride of underline */
-    text-decoration: none;
-    font-size: 16px;
-    /* transition: color, 1s font-size 1s; */
-    transition: font-size 0.5s ease;
-  }
-
-  li a:focus {
-    outline: none; /* Removes the focus outline */
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; /*this value changes the height of our navbar*/
+  overflow: hidden;
+  background-color: #A8CCC9; /*background color of the navbar*/
+  display: flex;
+  justify-content: flex-end;
 }
 
-  li a:hover {
-    background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
-    font-size: 20px;
-  }
+body {
+  margin: 0;
+  background-color: #B3D6C6;
+}
 
+.title-container {
+  text-align: center; /* Center the title */
+  margin: 20px 0; /* Space above and below the title */
+}
 
-  /* media query */
-  @media screen and (max-width: 480px) {
-    body {
+.title-container h1 {
+  font-size: 5em; /* Adjust the size of the title */
+  font-weight: 700; /* Make the title bold */
+  color: white;
+  /* Outline color and width */
+  -webkit-text-stroke: 1px #A8CCC9;
+  text-shadow: none; /* Disable text shadow if you have any */
+}
+
+li {
+  float: right;
+  display: right; /* this makes our navbar horizontal, without it it will be vertical (block) by default */
+  margin-right: 30px;
+}
+
+li a {
+  outline: none;
+  border: none;
+  color: white; /*text color of the navbar links*/
+  font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  padding: 10px;
+
+  /* get ride of underline */
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s ease;
+}
+
+li a:focus {
+  outline: none; /* Removes the focus outline */
+}
+
+li a:hover {
+  background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
+  font-size: 20px;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  body {
       background-color: lightgreen;
-    }
-    ul{
-        flex-direction: column;
-    }
-    li a{
-        width: 100vw;
-    }
   }
+  ul {
+      flex-direction: column;
+  }
+  li a {
+      width: 100vw;
+  }
+}
 
+/* when you click on text */
+li a:active {
+  background-color: white;
+  color: lightblue;
+}
 
-  /* transitions */
-  /* div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    transition: width 2s, background-color 1s; /*must set: which property you want to transition and how much*/
-  /* } */ 
-  
-  /* div:hover {
-    width: 300px; /*then, using a pseudo class, we can change the property, the transition will smooth the change*/
-    /* background-color: lightblue; */
-    /* font-size: 32px; */
-  /* } */ 
+/* Styles for Images Grid */
+.content-container {
+  padding: 20px; 
+  min-height: 100vh; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  margin-top: 60px; 
+}
 
-  /* when you click on text */
- li a:active{
-    background-color: white;
-    color: lightblue;
-} 
+.images-container {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1000px; 
+  margin: 20px 0; 
+}
 
+.images-container img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  transition: transform 0.3s ease;
+}
 
-
-/* styling for any navbar */
-/* ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  } */
-
-
-/* styling for horizontal navbar */
-
+.images-container img:hover{
+    /* scale image up by 10% when hovered over */
+    transform: scale(1.6);
+}
