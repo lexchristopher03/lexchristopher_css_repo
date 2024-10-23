@@ -77,7 +77,7 @@ li a:active {
   margin-top: 60px; 
 }
 
-.images-container {
+ .images-container {
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
   gap: 20px; 
@@ -95,8 +95,9 @@ li a:active {
 
 .images-container img:hover{
     /* scale image up by 10% when hovered over */
-    transform: scale(1.6);
-}
+    transform: scale(1.6); 
+ } 
+
 
 /* media query */
 @media screen and (max-width: 480px) {
