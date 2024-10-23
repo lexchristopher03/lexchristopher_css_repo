@@ -59,18 +59,6 @@ li a:hover {
   font-size: 20px;
 }
 
-/* media query */
-@media screen and (max-width: 480px) {
-  body {
-      background-color: lightgreen;
-  }
-  ul {
-      flex-direction: column;
-  }
-  li a {
-      width: 100vw;
-  }
-}
 
 /* when you click on text */
 li a:active {
@@ -108,4 +96,17 @@ li a:active {
 .images-container img:hover{
     /* scale image up by 10% when hovered over */
     transform: scale(1.6);
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  body {
+      background-color: lightgreen;
+  }
+  ul {
+      flex-direction: column;
+  }
+  li a {
+      width: 100vw;
+  }
 }
