@@ -1,97 +1,89 @@
-/* Styling for horizontal navbar */
-/*  */
-/* 
-li a:hover {
-  background-color: #75B9BE; /* Background color of navbar when hovering */
-  /* font-size: 20px; */
-/* }  */
-
-/* Target hover effect only for the navigation bar's list items */
-
-
-/* Remove the generic div hover rule */
-
-
-/* when you click on text */
-
-
-/* Media query */
-@media screen and (max-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
-  ul {
-    flex-direction: column;
-  }
-  li a {
-    width: 100vw;
-  }
+/* Reset default body margins */
+body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background-color: #B3D6C6; /* Background color */
 }
 
-/* Styling for horizontal navbar */
-/* ul { */
-  /* list-style-type: none;
+/* Navbar styling */
+nav {
+  width: 100%; /* Full width for navbar */
+  background-color: #A8CCC9; /* Navbar background color */
+}
+
+nav ul {
+  list-style-type: none;
   margin: 0;
-  padding: 10px; /* Changes the height of the navbar */
-  /* overflow: hidden; */
-  /* background-color: #A8CCC9; Background color of the navbar */
-  /* display: flex; */
-  /* justify-content: flex-end; */ 
-/* } */
-
-/* body {
-  margin: 0;
-  background-color: #B3D6C6;
-} */
-
-/* li {
-  float: right;
-  margin-right: 30px;
-} */
-
-/* li a { */
-  /* color: white; Text color of navbar links */
-  /* font-family: "Protest Strike", sans-serif;
-  text-align: center;
   padding: 10px;
+  display: flex;
+  justify-content: flex-end; /* Align navbar items to the right */
+}
+
+nav ul li {
+  margin-left: 20px; /* Spacing between navbar items */
+}
+
+nav ul li a {
   text-decoration: none;
-  font-size: 16px;
-  transition: font-size 0.5s ease; */
-/* } */
+  color: black;
+  padding: 14px 20px;
+  display: block;
+}
 
-/* li a:hover {
-  /* background-color: #75B9BE; Background color of navbar when hovering */
-  /* font-size: 20px; */
-/* } */ 
+nav ul li a:hover {
+  background-color: #75B9BE; /* Hover effect */
+}
 
-/* Target hover effect only for the navigation bar's list items */
-/* nav ul li:hover { */
-  /* font-size: 20px; */
-/* } */
+/* Contact box styling */
+.contact-box {
+  width: 300px; /* Set the width of the box */
+  padding: 20px; /* Add padding inside the box */
+  background-color: white; /* Box background color */
+  border: 2px solid #A8CCC9; /* Border styling */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  text-align: center; /* Center text in the box */
+}
 
-/* Remove the generic div hover rule */
-/* div:hover { */
-  /* Remove this rule entirely or comment it out */
-  /* width: 300px;
-  background-color: lightblue;
-  font-size: 32px; */
-/* } */
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column; /* Stack form elements */
+  align-items: stretch; /* Stretch to fill the box */
+}
 
-/* when you click on text */
-/* li a:active { */
-  /* background-color: white; */
-  /* color: lightblue; */
-/* } */
+.contact-form label {
+  margin-bottom: 8px; /* Space below labels */
+  font-weight: bold; /* Bold labels */
+  text-align: left; /* Align labels to the left */
+}
 
-/* Media query */
-/* @media screen and (max-width: 480px) {
-  body {
-    background-color: lightgreen;
-  }
-  ul {
-    flex-direction: column;
-  }
-  li a {
-    width: 100vw; */
-  /* } */
-/* } */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%; /* Full width inputs */
+  padding: 10px; /* Padding inside inputs */
+  margin-bottom: 15px; /* Space below inputs */
+  border: 1px solid #ccc; /* Border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.contact-form button {
+  padding: 10px; /* Button padding */
+  background-color: #75B9BE; /* Button color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Button text size */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+.contact-form button:hover {
+  background-color: #639E9D; /* Hover effect for button */
+}
