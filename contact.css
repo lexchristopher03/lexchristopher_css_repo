@@ -1,4 +1,11 @@
 body {
+  background-image: url("img/USWNT.jpg");
+  
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  overflow-x: hidden;
   margin: 0; 
   padding: 0; 
   height: 100vh; 
@@ -49,7 +56,7 @@ nav ul li a:hover {
 }
 
 /* Contact form styling */
-/* .form input[type="name"],
+.form input[type="name"],
 .form input[type="email"],
 .form input[type="message"] {
   width: 100%;
@@ -58,9 +65,9 @@ nav ul li a:hover {
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-} */
+} 
 
-/* .form button {
+.form button {
   padding: 10px;
   background-color: #75B9BE;
   color: white;
@@ -73,4 +80,4 @@ nav ul li a:hover {
 
 .form button:hover {
   background-color: #639E9D;
-} */
+}
