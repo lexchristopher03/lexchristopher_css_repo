@@ -102,6 +102,54 @@ button {
   margin: 20px;
 }
 
+.form {
+  width: 45%; /* Keep the 45% width for the form */
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the form horizontally */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align all form elements to the center */
+}
+.form textarea {
+  width: 100%; /* Make the textarea full-width */
+  max-width: 500px; /* Increase the maximum width to make it wider */
+  height: 150px; /* Adjust the height if needed */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form input[type="name"],
+.form input[type="email"] {
+  width: 100%; /* Make inputs full-width */
+  max-width: 300px; /* Limit the maximum width */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center; /* Center the text inside the inputs */
+}
+
+
+.form h2{
+  text-align: center; 
+  font-size: 2em; 
+  margin-bottom: 20px;
+}
+.form label {
+  /* put label on it's own line */
+  display: block; 
+  margin-bottom: 5px; 
+  font-size: 1.2em; 
+  text-align: center; 
+}
+
+
+
 .form, .tickets {
   width: 45%; /* Make both forms take up 45% of the available space */
   padding: 20px;
@@ -173,6 +221,10 @@ button {
   padding: 10px; 
 }
 
+.footer-bar p{
+  font-size: 25px;
+}
+
 
 .social-icons a {
   color: white; 
@@ -195,4 +247,13 @@ button {
   background-color: #6b8381
 }
 
+.tickets p{
+  font-size: 25;
+}
+
+.tickets hr{
+  border: 0; /* Remove the default border */
+  border-top: 2px solid #A8CCC9; /* Add a new colored border */
+  margin: 20px 0;
+}
 
