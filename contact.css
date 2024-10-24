@@ -26,7 +26,7 @@ nav ul li a {
   text-decoration: none; 
 }
 
-.form {
+/* .form {
   width: 300px; 
   margin: 20px auto;
   margin: 20px;
@@ -34,7 +34,7 @@ nav ul li a {
   background-color: #f9f9f9; 
   border-radius: 8px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-}
+} */
 /* .contact-section {
   display: flex; 
   justify-content: space-between; 
@@ -52,7 +52,7 @@ nav ul li a {
 } */
 
 
-.form h2 {
+/* .form h2 {
   text-align: left; 
   font-size: 2em; 
   margin-bottom: 50px;
@@ -65,7 +65,7 @@ nav ul li a {
     margin: 10px 0; 
     border: 1px solid #ccc; 
     border-radius: 4px; 
-}
+} */
 
 /* .form input, .form textarea {
   width: 200px; 
@@ -74,7 +74,7 @@ nav ul li a {
   border: 1px solid #ccc; 
   border-radius: 4px;  */
 
-.form textarea {
+/* .form textarea {
   width: 200px; 
   height: 100px; 
   padding: 8px; 
@@ -94,8 +94,45 @@ button {
 
 .form button:hover {
   background-color: #6b8381; 
+} */
+.contact-ticket-section {
+  display: flex; /* Align contact form and ticket form side by side */
+  justify-content: space-between; /* Add space between them */
+  align-items: flex-start; /* Align the forms at the top */
+  margin: 20px;
 }
 
+.form, .tickets {
+  width: 45%; /* Make both forms take up 45% of the available space */
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.tickets h2 {
+  text-align: center; 
+  font-size: 2em; 
+  margin-bottom: 20px;
+}
+
+.tickets p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+button {
+  background-color: #A8CCC9; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+}
+
+.form button:hover, .tickets button:hover {
+  background-color: #6b8381; 
+}
 .row {
   display: flex;
   flex-wrap: wrap; 
@@ -133,7 +170,11 @@ button {
   text-decoration: none; 
 }
 
+/* .tickets {
+  width: 200px; 
+  height: 100px; 
+  padding: 8px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+} */
 
-.image-container{
-
-}
