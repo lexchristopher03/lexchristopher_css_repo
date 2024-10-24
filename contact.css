@@ -1,10 +1,4 @@
 body {
-  background-image: url("img/USWNT.jpg");
-  
-  background-size: cover;
-  background-position: center top;
-  background-repeat: no-repeat;
-
   overflow-x: hidden;
   margin: 0; 
   padding: 0; 
@@ -19,6 +13,9 @@ body {
 nav {
   width: 100%; 
   background-color: #A8CCC9;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
 nav ul {
@@ -33,15 +30,25 @@ nav ul li {
   margin-left: 20px;
 }
 
+
+
 nav ul li a {
   text-decoration: none;
-  color: black;
-  padding: 14px 20px;
+  font-family: "Protest Strike", sans-serif;
+
+  color: white;
+  padding: 10px;
   display: block;
 }
 
 nav ul li a:hover {
   background-color: #75B9BE;
+  font-size: 20px;
+}
+
+.form h2 {
+  font-size: 36px; 
+  color: #333; 
 }
 
 /* Center form inside a box */
@@ -80,4 +87,16 @@ nav ul li a:hover {
 
 .form button:hover {
   background-color: #639E9D;
+}
+
+
+.footer-bar {
+  width: 100%; 
+  height: 60px;
+  background-color: #A8CCC9; 
+  /* make stay at bottom of screen */
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  z-index: 1000; 
 }
