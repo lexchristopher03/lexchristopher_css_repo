@@ -27,23 +27,57 @@ nav ul li a {
 }
 
 .form {
+  width: 300px; 
+  margin: 20px auto;
   margin: 20px;
   padding: 20px;
   background-color: #f9f9f9; 
   border-radius: 8px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
+/* .contact-section {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.image-container {
+  margin-left: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+} */
+
 
 .form h2 {
-  text-align: center; 
+  text-align: left; 
   font-size: 2em; 
   margin-bottom: 50px;
 }
 
-.form input, .form textarea {
-  width: 100%; 
+.form input[type="Name"],
+.form input[type="Email"] {
+    width: 150px !important; 
+    padding: 8px; 
+    margin: 10px 0; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+/* .form input, .form textarea {
+  width: 200px; 
   padding: 10px; 
   margin: 10px 0; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;  */
+
+.form textarea {
+  width: 200px; 
+  height: 100px; 
+  padding: 8px; 
   border: 1px solid #ccc; 
   border-radius: 4px; 
 }
@@ -55,6 +89,11 @@ button {
   border: none; 
   border-radius: 4px; 
   cursor: pointer; 
+}
+
+
+.form button:hover {
+  background-color: #6b8381; 
 }
 
 .row {
@@ -92,4 +131,9 @@ button {
   color: white; 
   margin: 0 10px; 
   text-decoration: none; 
+}
+
+
+.image-container{
+
 }
