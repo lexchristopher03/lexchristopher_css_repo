@@ -1,18 +1,17 @@
-/* Reset default body margins */
 body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  height: 100vh; /* Full viewport height */
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  background-color: #B3D6C6; /* Background color */
+  margin: 0; 
+  padding: 0; 
+  height: 100vh; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  background-color: #B3D6C6; 
 }
 
 /* Navbar styling */
 nav {
-  width: 100%; /* Full width for navbar */
-  background-color: #A8CCC9; /* Navbar background color */
+  width: 100%; 
+  background-color: #A8CCC9;
 }
 
 nav ul {
@@ -20,11 +19,11 @@ nav ul {
   margin: 0;
   padding: 10px;
   display: flex;
-  justify-content: flex-end; /* Align navbar items to the right */
+  justify-content: flex-end;
 }
 
 nav ul li {
-  margin-left: 20px; /* Spacing between navbar items */
+  margin-left: 20px;
 }
 
 nav ul li a {
@@ -35,55 +34,43 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: #75B9BE; /* Hover effect */
+  background-color: #75B9BE;
 }
 
-/* Contact box styling */
-.contact-box {
-  width: 300px; /* Set the width of the box */
-  padding: 20px; /* Add padding inside the box */
-  background-color: white; /* Box background color */
-  border: 2px solid #A8CCC9; /* Border styling */
-  border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
-  text-align: center; /* Center text in the box */
+/* Center form inside a box */
+.contact-box, .form {
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid #A8CCC9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 /* Contact form styling */
-.contact-form {
-  display: flex;
-  flex-direction: column; /* Stack form elements */
-  align-items: stretch; /* Stretch to fill the box */
+.form input[type="name"],
+.form input[type="email"],
+.form input[type="message"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.contact-form label {
-  margin-bottom: 8px; /* Space below labels */
-  font-weight: bold; /* Bold labels */
-  text-align: left; /* Align labels to the left */
+.form button {
+  padding: 10px;
+  background-color: #75B9BE;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
 
-.contact-form input[type="text"],
-.contact-form input[type="email"],
-.contact-form textarea {
-  width: 100%; /* Full width inputs */
-  padding: 10px; /* Padding inside inputs */
-  margin-bottom: 15px; /* Space below inputs */
-  border: 1px solid #ccc; /* Border */
-  border-radius: 4px; /* Rounded corners */
-  box-sizing: border-box; /* Include padding in width */
-}
-
-.contact-form button {
-  padding: 10px; /* Button padding */
-  background-color: #75B9BE; /* Button color */
-  color: white; /* Button text color */
-  border: none; /* No border */
-  border-radius: 4px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Button text size */
-  transition: background-color 0.3s ease; /* Transition for hover effect */
-}
-
-.contact-form button:hover {
-  background-color: #639E9D; /* Hover effect for button */
+.form button:hover {
+  background-color: #639E9D;
 }
