@@ -146,11 +146,20 @@ button {
   margin: 10px; 
 }
 
+
 .card {
   background-color: #fff; 
   border-radius: 8px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   overflow: hidden; 
+  transition: transform 0.s, box-shadow 0.3s; 
+}
+
+
+.card:hover {
+  /* move card(s) up slightly when hovered over */
+  transform: translateY(-8px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -164,11 +173,7 @@ button {
   padding: 10px; 
 }
 
-/* .social-icons a {
-  color: white; 
-  margin: 0 10px; 
-  text-decoration: none; 
-} */
+
 .social-icons a {
   color: white; 
   margin: 0 10px; 
@@ -189,11 +194,5 @@ button {
 .social-icons a:hover{
   background-color: #6b8381
 }
-/* .tickets {
-  width: 200px; 
-  height: 100px; 
-  padding: 8px; 
-  border: 1px solid #ccc; 
-  border-radius: 4px; 
-} */
+
 
