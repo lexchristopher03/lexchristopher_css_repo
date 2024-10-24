@@ -47,7 +47,7 @@ nav ul li a:hover {
 }
 
 .form h2 {
-  font-size: 36px; 
+  font-size: 50px; 
   color: #333; 
 }
 
@@ -55,6 +55,10 @@ nav ul li a:hover {
 /* Center form inside a box */
 .contact-box, .form {
   width: 600px;
+  height: 600px;
+  position: relative; /* Position relative to the parent element */
+  left: -390px; /* Move it 20px from the left edge of the screen */
+  top: 0px;
   padding: 20px;
   background-color: white;
   border: 2px solid #A8CCC9;
@@ -64,9 +68,10 @@ nav ul li a:hover {
 }
 
 /* Contact form styling */
+/* .form input[type="message"] */
 .form input[type="name"],
-.form input[type="email"],
-.form input[type="message"] {
+.form input[type="email"]
+ {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -74,6 +79,16 @@ nav ul li a:hover {
   border-radius: 4px;
   box-sizing: border-box;
 } 
+.form textarea {
+  width: 100%;
+  height: 200px; /* Increase the height to make it bigger */
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical; /* Allows user to resize it vertically */
+}
 
 .form button {
   padding: 10px;
@@ -91,13 +106,49 @@ nav ul li a:hover {
 }
 
 
+/* Footer bar */
 .footer-bar {
   width: 100%; 
   height: 60px;
   background-color: #A8CCC9; 
-  /* make stay at bottom of screen */
   position: fixed; 
+  text-align: center;
   bottom: 0; 
   left: 0;
   z-index: 1000; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer content */
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer text styling */
+.footer-content p {
+  font-size: 16px;
+  color: white;
+  margin-right: 15px;
+}
+
+/* Social media icons */
+.social-icons {
+  display: flex;
+}
+
+.social-icons a {
+  font-size: 24px; /* Icon size */
+  color: white;
+  margin: 0 10px; /* Space between icons */
+  text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2); /* Slight zoom effect on hover */
+  color: #639E9D; /* Change color on hover */
 }
