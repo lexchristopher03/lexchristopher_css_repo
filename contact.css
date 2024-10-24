@@ -1,154 +1,95 @@
 body {
-  overflow-x: hidden;
-  margin: 0; 
-  padding: 0; 
-  height: 100vh; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
-  background-color: #B3D6C6; 
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Navbar styling */
 nav {
-  width: 100%; 
-  background-color: #A8CCC9;
-  position: fixed;
-  top: 0;
-  z-index: 1000;
+  background-color: #A8CCC9; 
+  color: white; 
+  padding: 10px; 
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 10px;
-  display: flex;
-  justify-content: flex-end;
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
 }
 
 nav ul li {
-  margin-left: 20px;
+  display: inline; 
+  margin-right: 20px; 
 }
-
-
 
 nav ul li a {
-  text-decoration: none;
-  font-family: "Protest Strike", sans-serif;
-
-  color: white;
-  padding: 10px;
-  display: block;
+  color: white; 
+  text-decoration: none; 
 }
 
-nav ul li a:hover {
-  background-color: #75B9BE;
-  font-size: 20px;
+.form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 .form h2 {
-  font-size: 50px; 
-  color: #333; 
+  text-align: center; 
+  font-size: 2em; 
+  margin-bottom: 50px;
 }
 
-
-/* Center form inside a box */
-.contact-box, .form {
-  width: 600px;
-  height: 600px;
-  position: relative; /* Position relative to the parent element */
-  left: -390px; /* Move it 20px from the left edge of the screen */
-  top: 0px;
-  padding: 20px;
-  background-color: white;
-  border: 2px solid #A8CCC9;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-/* Contact form styling */
-/* .form input[type="message"] */
-.form input[type="name"],
-.form input[type="email"]
- {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-} 
-.form textarea {
-  width: 100%;
-  height: 200px; /* Increase the height to make it bigger */
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  resize: vertical; /* Allows user to resize it vertically */
-}
-
-.form button {
-  padding: 10px;
-  background-color: #75B9BE;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.form button:hover {
-  background-color: #639E9D;
-}
-
-
-/* Footer bar */
-.footer-bar {
+.form input, .form textarea {
   width: 100%; 
-  height: 60px;
+  padding: 10px; 
+  margin: 10px 0; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+}
+
+button {
   background-color: #A8CCC9; 
-  position: fixed; 
-  text-align: center;
-  bottom: 0; 
-  left: 0;
-  z-index: 1000; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
 }
 
-/* Footer content */
-.footer-content {
+.row {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin: 20px 0; 
 }
 
-/* Footer text styling */
-.footer-content p {
-  font-size: 16px;
-  color: white;
-  margin-right: 15px;
+.column {
+  flex: 1 1 30%; 
+  max-width: 30%; 
+  margin: 10px; 
 }
 
-/* Social media icons */
-.social-icons {
-  display: flex;
+.card {
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  overflow: hidden; 
+}
+
+.container {
+  padding: 15px; 
+}
+
+.footer-bar {
+  background-color: #A8CCC9; 
+  color: white; 
+  text-align: center; 
+  padding: 10px; 
 }
 
 .social-icons a {
-  font-size: 24px; /* Icon size */
-  color: white;
-  margin: 0 10px; /* Space between icons */
-  text-decoration: none;
-  transition: transform 0.3s ease, color 0.3s ease;
-}
-
-.social-icons a:hover {
-  transform: scale(1.2); /* Slight zoom effect on hover */
-  color: #639E9D; /* Change color on hover */
+  color: white; 
+  margin: 0 10px; 
+  text-decoration: none; 
 }
