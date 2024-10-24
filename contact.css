@@ -164,12 +164,31 @@ button {
   padding: 10px; 
 }
 
+/* .social-icons a {
+  color: white; 
+  margin: 0 10px; 
+  text-decoration: none; 
+} */
 .social-icons a {
   color: white; 
   margin: 0 10px; 
   text-decoration: none; 
+  display: inline-block; 
+  /* Set a width for the circular effect */
+  width: 40px; 
+  /* Set a height for the circular effect */
+  height: 40px; 
+  line-height: 40px;
+  text-align: center; 
+  /* Makes the icon circular */
+  border-radius: 50%; 
+  /* transition for hover effect */
+  transition: background-color 0.3s; 
 }
 
+.social-icons a:hover{
+  background-color: #6b8381
+}
 /* .tickets {
   width: 200px; 
   height: 100px; 
