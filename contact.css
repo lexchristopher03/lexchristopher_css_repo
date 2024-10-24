@@ -27,6 +27,7 @@ nav ul li a {
 }
 
 
+
 .contact-ticket-section {
   display: flex; /* Align contact form and ticket form side by side */
   justify-content: space-between; /* Add space between them */
