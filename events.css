@@ -23,28 +23,24 @@ body {
   
   nav ul li a {
     text-decoration: none;
-    color: black;
-    padding: 14px 20px;
+    color: rgb(255, 255, 255);
+    padding: 0px 0px;
     display: block;
   }
   
   nav ul li a:hover {
-    background-color: #75B9BE; /* Hover effect */
-  }
-.event {
-    font-size: 150%;
-    padding: 0px 0px;
-    margin: 0 auto;
-    background-color: rgb(84, 164, 164);
-    padding: .25em;
-    position: sitcky;
-    top: 0;
-    z-index: 1000;
+    transform: translateY(-8px); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 .grid{
-  margin: 0 10px;
+  font-size: 150;
+  margin: 0 auto;
   padding: 0 5px;
   max-width: 1500px;
+  background-color: #c8eaec;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   }
 main {
     display: grid;
@@ -56,11 +52,17 @@ article, aside {
 }
 .about {
     border-style: solid;
-    border-color: #003538;
+    background-color: #ffffff;
+    border-color: #000000;
     border-width: 2px;
     padding: .25em;
     margin: 1em;
  }
+ .about:hover {
+  /* move card(s) up slightly when hovered over */
+  transform: translateY(-8px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 h1 {
   font-size: 1em;
 }
@@ -81,4 +83,27 @@ p {
 h2 {
 font-size: 1em;
 padding-left: 40px;
+}
+.viewevent{
+  background-color: #d1ebe9;
+}
+.view{
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.view:hover{
+  transform: translateY(-8px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.more{
+  padding: 10px;
+
+}
+h2{
+  font-size: 20px;
+}
+p{
+  font-size: 15px;
 }
