@@ -38,6 +38,12 @@ nav ul li a {
   margin: 20px;
 }
 
+/* change color of line in contact form box */
+.contact-ticket-section hr{
+  /* color: #A8CCC9; */
+  border-top: 2px solid #A8CCC9
+}
+
 .form {
   width: 45%; 
   padding: 20px;
@@ -220,6 +226,11 @@ button {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
+}
+
+.faq-container p{
+  font-size: 25;
+  color: white;
 }
 
 
