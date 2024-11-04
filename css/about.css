@@ -5,6 +5,29 @@ body {
     font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
   }
 
+  /* nav bar test */
+  nav {
+    background-color: #A8CCC9; 
+    color: white; 
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+  }
+  
+  nav ul li {
+    display: inline; 
+    margin-right: 20px; 
+  }
+  
+  nav ul li a {
+    color: white; 
+    text-decoration: none; 
+  }
+
   img {
       max-width: 100%;
       display: block;
