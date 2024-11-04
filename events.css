@@ -1,50 +1,84 @@
+/* styling for navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; /*this value changes the height of our navbar*/
+  overflow: hidden;
+  background-color: #A8CCC9; /*background color of the navbar*/
+  display: flex;
+  justify-content: flex-end;
+}
+
 body {
-    background-color: #fff;
-    color: #003538;
-    margin: 0;
-    font: 1.4em / 1.2 Arial, Helvetica, sans-serif;
-  }
-  nav {
-    width: 100%; /* Full width for navbar */
-    background-color: #A8CCC9; /* Navbar background color */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end; /* Align navbar items to the right */
-  }
-  
-  nav ul li {
-    margin-left: 20px; /* Spacing between navbar items */
-  }
-  
-  nav ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 14px 20px;
-    display: block;
-  }
-  
-  nav ul li a:hover {
-    background-color: #75B9BE; /* Hover effect */
-  }
-.event {
-    font-size: 150%;
-    padding: 0px 0px;
-    margin: 0 auto;
-    background-color: rgb(84, 164, 164);
-    padding: .25em;
-    position: sitcky;
-    top: 0;
-    z-index: 1000;
-  }
+  margin: 0;
+  background-color: #B3D6C6;
+}
+
+.title-container {
+  text-align: center; /* Center the title */
+  margin: 20px 0; /* Space above and below the title */
+}
+.hero-section {
+  background: url('/images/heroImage.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.title-container h1 {
+  font-size: 5em; /* Adjust the size of the title */
+  font-weight: 700; /* Make the title bold */
+  color: white;
+  /* Outline color and width */
+  -webkit-text-stroke: 1px #A8CCC9;
+  text-shadow: none; /* Disable text shadow if you have any */
+}
+
+li {
+  float: right;
+  display: right; /* this makes our navbar horizontal, without it it will be vertical (block) by default */
+  margin-right: 30px;
+}
+
+li a {
+  outline: none;
+  border: none;
+  color: white; /*text color of the navbar links*/
+  font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  padding: 10px;
+
+  /* get ride of underline */
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s ease;
+}
+
+li a:focus {
+  outline: none; /* Removes the focus outline */
+}
+
+li a:hover {
+  background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
+  font-size: 20px;
+  color:black;
+}
+
+
+/* when you click on text */
+li a:active {
+  background-color: white;
+  color: lightblue;
+}
 .grid{
-  margin: 0 10px;
+  font-size: 150;
+  margin: 0 auto;
   padding: 0 5px;
   max-width: 1500px;
+  background-color: #B3D6C6;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   }
 main {
     display: grid;
@@ -56,11 +90,21 @@ article, aside {
 }
 .about {
     border-style: solid;
-    border-color: #003538;
-    border-width: 2px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    border-width: 1em;
     padding: .25em;
-    margin: 1em;
+    margin: 2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.s, box-shadow 0.3s; 
  }
+ .about:hover {
+  /* move card(s) up slightly when hovered over */
+  transform: translateY(-8px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
 h1 {
   font-size: 1em;
 }
@@ -70,15 +114,63 @@ p {
 .photos {
   list-style: none;
   display: grid;
-  grid-template-columns: repeat( , 1fr);
-  gap: 1px;
+  grid-template-columns: repeat( 1fr, 1fr);
+  gap: 40px;
 }
 
 .photos img {
   width: 100%;
+  height: 100%;
   display: block;
 }
-h2 {
-font-size: 1em;
+.inside {
+font-size: 1.5em;
 padding-left: 40px;
+color: #ffffff;
+}
+.viewevent{
+  background-color: #B3D6C6;
+}
+.view{
+  text-align: center;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+  margin-left: 20em;
+  margin-right: 20em;
+  border-width: .5em;
+}
+a{
+  color:#000000;
+  text-decoration: none;
+}
+.view:hover{
+  transform: translateY(-8px); 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.more{
+  padding: 10px;
+  color: #000000;
+}
+.moreone{
+  margin: 2em;
+}
+h2{
+  font-size: 20px;
+}
+p{
+  font-size: 15px;
+}
+.season{
+  font-size: 25px;
+  color: #ffffff;
+}
+.seasonp{
+  font-size: 20px;
+  padding-top: 0em;
+  padding-bottom: 1em ;
+  padding-left: 1em;
+  padding-right: 1em;
+  color: #ffffff;
 }
