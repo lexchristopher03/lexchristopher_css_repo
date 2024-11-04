@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* 
 nav {
   background-color: #A8CCC9; 
   color: white; 
@@ -24,6 +24,15 @@ nav ul li {
 nav ul li a {
   color: white; 
   text-decoration: none; 
+} */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; /*this value changes the height of our navbar*/
+  overflow: hidden;
+  background-color: #A8CCC9; /*background color of the navbar*/
+  display: flex;
+  justify-content: flex-end;
 }
 
 
