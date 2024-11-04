@@ -1,0 +1,326 @@
+/* styling for navbar */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; /*this value changes the height of our navbar*/
+  overflow: hidden;
+  background-color: #A8CCC9; /*background color of the navbar*/
+  display: flex;
+  justify-content: flex-end;
+}
+
+body {
+  margin: 0;
+  background-color: #B3D6C6;
+}
+
+.title-container {
+  text-align: center; /* Center the title */
+  margin: 20px 0; /* Space above and below the title */
+}
+.hero-section {
+  background: url('/images/heroImage.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.title-container h1 {
+  font-size: 5em; /* Adjust the size of the title */
+  font-weight: 700; /* Make the title bold */
+  color: white;
+  /* Outline color and width */
+  -webkit-text-stroke: 1px #A8CCC9;
+  text-shadow: none; /* Disable text shadow if you have any */
+}
+
+li {
+  float: right;
+  display: right; /* this makes our navbar horizontal, without it it will be vertical (block) by default */
+  margin-right: 30px;
+}
+
+li a {
+  outline: none;
+  border: none;
+  color: white; /*text color of the navbar links*/
+  font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  padding: 10px;
+
+  /* get ride of underline */
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s ease;
+}
+
+li a:focus {
+  outline: none; /* Removes the focus outline */
+}
+
+li a:hover {
+  background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
+  font-size: 20px;
+  color:black;
+}
+
+
+/* when you click on text */
+li a:active {
+  background-color: white;
+  color: lightblue;
+}
+
+/* Styles for Images Grid */
+.content-container {
+  padding: 20px; 
+  min-height: 10vh; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: flex-start; 
+  margin-top: 0; 
+  color: #ffffff;
+}
+.featured-events {
+  text-align: center;
+  margin-top: 0px; /* Adjusted */
+}
+
+.featured-events h2 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 10px; /* Adjusted */
+}
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.event h3 {
+  font-size: 1.2rem;
+  color: #4A4A4A;
+  margin: 10px 0;
+}
+
+.event p {
+  font-size: 1rem;
+  color: #4A4A4A;
+  margin: 5px 0 15px;
+}
+
+.event button {
+  background-color: #4A4A4A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.event button:hover {
+  background-color: #333333;
+}
+ .images-container {
+  display: grid; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  width: 100%;
+  max-width: 1000px; 
+  margin: 20px 0; 
+}
+
+.images-container img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+  transition: transform 0.3s ease;
+}
+
+.images-container img:hover{
+    /* scale image up by 10% when hovered over */
+    transform: scale(1.6); 
+ } 
+ footer {
+  background-color: #A8CCC9;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #F1F1F1;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  color: #75B9BE;
+}
+
+
+
+.events-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.event h3 {
+  font-size: 1.2rem;
+  color: #4A4A4A;
+  margin: 10px 0;
+}
+
+.event p {
+  font-size: 1rem;
+  color: #4A4A4A;
+  margin: 5px 0 15px;
+}
+
+.event button {
+  background-color: #4A4A4A;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.event button:hover {
+  background-color: #333333;
+}
+.landing-content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  color: #ffffff;
+}
+
+.landing-content section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #A8CCC9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-content h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.landing-content h3 {
+  font-size: 1.5rem;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.landing-content p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.explore-link {
+  display: inline-block;
+  background-color: #4A4A4A;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-link:hover {
+  background-color: #333333;
+}
+
+
+.sidebar {
+  width: 175px; /* Set a fixed width for the sidebar */
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the sidebar box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a lifted effect */
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column; /* Stack profiles vertically */
+}
+
+.person-box {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color:  #75B9BE;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-box img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.person-box h3 {
+  font-size: 1.2em;
+  color: #4A4A4A;
+  margin: 5px 0;
+}
+
+.person-box p {
+  font-size: 1em;
+  color: #666666;
+}
+
+/* media query */
+@media screen and (max-width: 480px) {
+  body {
+      background-color: lightgreen;
+  }
+  ul {
+      flex-direction: column;
+  }
+  li a {
+      width: 100vw;
+  }
+}
