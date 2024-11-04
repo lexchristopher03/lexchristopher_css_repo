@@ -224,6 +224,94 @@ footer a:hover {
 .event button:hover {
   background-color: #333333;
 }
+.landing-content {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  color: #ffffff;
+}
+
+.landing-content section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #A8CCC9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.landing-content h2 {
+  font-size: 2rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.landing-content h3 {
+  font-size: 1.5rem;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.landing-content p {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.explore-link {
+  display: inline-block;
+  background-color: #4A4A4A;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.explore-link:hover {
+  background-color: #333333;
+}
+
+
+.sidebar {
+  width: 175px; /* Set a fixed width for the sidebar */
+  background-color: #F0F0F0;
+  padding: 20px;
+  border-radius: 8px; /* Rounded corners for the sidebar box */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a lifted effect */
+}
+
+.sidebar-content {
+  display: flex;
+  flex-direction: column; /* Stack profiles vertically */
+}
+
+.person-box {
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 10px;
+  background-color:  #75B9BE;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.person-box img {
+  width: 100%;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.person-box h3 {
+  font-size: 1.2em;
+  color: #4A4A4A;
+  margin: 5px 0;
+}
+
+.person-box p {
+  font-size: 1em;
+  color: #666666;
+}
+
 /* media query */
 @media screen and (max-width: 480px) {
   body {
