@@ -152,6 +152,7 @@ a{
 .more{
   padding: 10px;
   color: #000000;
+  margin: 2em;
 }
 .moreone{
   margin: 2em;
@@ -173,4 +174,12 @@ p{
   padding-left: 1em;
   padding-right: 1em;
   color: #ffffff;
+}
+img{
+  width: 20%;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+.chris{
+  margin-left: 2.6em;
 }
