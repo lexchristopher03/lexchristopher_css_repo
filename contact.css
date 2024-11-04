@@ -29,27 +29,32 @@ nav ul li a {
 
 
 .contact-ticket-section {
-  display: flex; /* Align contact form and ticket form side by side */
-  justify-content: space-between; /* Add space between them */
-  align-items: flex-start; /* Align the forms at the top */
+  /* Align contact form and ticket form side by side */
+  display: flex; 
+  /* Add space between them */
+  justify-content: space-between; 
+  /* Align the forms at the top */
+  align-items: flex-start; 
   margin: 20px;
 }
 
 .form {
-  width: 45%; /* Keep the 45% width for the form */
+  width: 45%; 
   padding: 20px;
   background-color: #f9f9f9; 
   border-radius: 8px; 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 0 auto; /* Center the form horizontally */
+  /* Center the form horizontally */
+  margin: 0 auto; 
   display: flex;
   flex-direction: column;
-  align-items: center; /* Align all form elements to the center */
+  /* Align all form elements to the center */
+  align-items: center; 
 }
 .form textarea {
-  width: 100%; /* Make the textarea full-width */
-  max-width: 500px; /* Increase the maximum width to make it wider */
-  height: 150px; /* Adjust the height if needed */
+  width: 100%; 
+  max-width: 500px; 
+  height: 150px;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
@@ -58,13 +63,14 @@ nav ul li a {
 
 .form input[type="name"],
 .form input[type="email"] {
-  width: 100%; /* Make inputs full-width */
-  max-width: 300px; /* Limit the maximum width */
+  width: 100%; 
+  max-width: 300px; 
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 4px;
-  text-align: center; /* Center the text inside the inputs */
+  /* Center the text inside the inputs */
+  text-align: center; 
 }
 
 
@@ -84,7 +90,8 @@ nav ul li a {
 
 
 .form, .tickets {
-  width: 45%; /* Make both forms take up 45% of the available space */
+  /* Make both forms take up 45% of the available space */
+  width: 45%; 
   padding: 20px;
   background-color: #f9f9f9; 
   border-radius: 8px; 
@@ -191,89 +198,39 @@ button {
 }
 
 
-/* .FAQ {
-  background-color: #A8CCC9; 
-  color: white; 
-  text-align: center; 
-  padding: 10px; 
-}
 
-.FAQ p{
-  font-size: 25px;
-} */
-
-/* FAQ stuff */
-/* .container h1{
-  color: #fff;
-  text-align: center;
-}
-
-details{
-  background-color: #A8CCC9;
-  color: #fff;
-  font-size: 1.5rem;
-}
-
-summary {
-  padding: .5em 1.3rem;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;  
-  transition: height 1s ease;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-
-summary:after{
-  content: "\002B";
-}
-
-details[open] summary {
-    border-bottom: 1px solid #aaa;
-    margin-bottom: .5em;
-}
-
-details[open] summary:after{
-  content: "\00D7";
-}
-
-details[open] div{
-  padding: .5em 1em;
-} */
 /* FAQ container */
-
-
 .faq-container {
   display: flex;
-  flex-direction: column; /* Stack FAQ items vertically */
-  align-items: center; /* Center the FAQ items horizontally */
-  margin: 20px auto; /* Center the container itself */
-  max-width: 800px; /* Optional: Limit the width of the FAQ section */
+  /* Stack FAQ items vertically */
+  flex-direction: column; 
+  /* Center the FAQ items horizontally */
+  align-items: center; 
+  /* Center the container itself */
+  margin: 20px auto; 
+  /* Optional: Limit the width of the FAQ section */
+  max-width: 800px; 
   padding: 10px;
 }
 
 /* FAQ section */
 .faq-container h1 {
-  color: #4A90E2 !important; /* Replace this with your desired color code */
+  color: white;
+  /* color: #4A90E2 !important;  */
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
-/* .container h1 {
-  color: #fff;
-  text-align: center;
-  font-size: 2em;
-  margin-bottom: 20px;
-} */
+
+
 
 details {
   background-color: #A8CCC9;
   color: #fff;
   font-size: 1.5rem;
-  width: 100%; /* Full width within the container */
-  margin-bottom: 10px; /* Space between FAQ items */
+  width: 100%; 
+  /* Space between FAQ items */
+  margin-bottom: 10px; 
   border-radius: 8px;
   overflow: hidden;
 }
