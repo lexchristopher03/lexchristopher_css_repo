@@ -191,5 +191,119 @@ button {
 }
 
 
+/* .FAQ {
+  background-color: #A8CCC9; 
+  color: white; 
+  text-align: center; 
+  padding: 10px; 
+}
+
+.FAQ p{
+  font-size: 25px;
+} */
+
+/* FAQ stuff */
+/* .container h1{
+  color: #fff;
+  text-align: center;
+}
+
+details{
+  background-color: #A8CCC9;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;  
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after{
+  content: "\002B";
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: .5em;
+}
+
+details[open] summary:after{
+  content: "\00D7";
+}
+
+details[open] div{
+  padding: .5em 1em;
+} */
+/* FAQ container */
 
 
+.faq-container {
+  display: flex;
+  flex-direction: column; /* Stack FAQ items vertically */
+  align-items: center; /* Center the FAQ items horizontally */
+  margin: 20px auto; /* Center the container itself */
+  max-width: 800px; /* Optional: Limit the width of the FAQ section */
+  padding: 10px;
+}
+
+/* FAQ section */
+.faq-container h1 {
+  color: #4A90E2 !important; /* Replace this with your desired color code */
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/* .container h1 {
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+} */
+
+details {
+  background-color: #A8CCC9;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 100%; /* Full width within the container */
+  margin-bottom: 10px; /* Space between FAQ items */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+summary {
+  padding: .5em 1.3rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: height 1s ease;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:after {
+  content: "\002B";
+}
+
+details[open] summary {
+  border-bottom: 1px solid white;
+  margin-bottom: .5em;
+}
+
+details[open] summary:after {
+  content: "\00D7";
+}
+
+details[open] div {
+  padding: .5em 1em;
+}
