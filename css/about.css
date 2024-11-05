@@ -1,52 +1,48 @@
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px; /*this value changes the height of our navbar*/
+  overflow: hidden;
+  background-color: #A8CCC9; /*background color of the navbar*/
+  display: flex;
+  justify-content: flex-end;
+}
+
 body {
-    background-color: #fff;
-    color: #333;
-    margin: 0;
-    font: 1.2em / 1.2 Arial, Helvetica, sans-serif;
-  }
+  margin: 0;
+  background-color: #B3D6C6;
+}
 
-  /* nav bar test */
-  nav {
-    background-color: #A8CCC9; 
-    color: white; 
-    padding: 10px;
-  }
-  
-  nav ul {
-    list-style-type: none; 
-    padding: 0; 
-    margin: 0; 
-  }
-  
-  nav ul li {
-    display: inline; 
-    margin-right: 20px; 
-  }
-  
-  nav ul li a {
-    color: white; 
-    text-decoration: none; 
-  }
+li {
+  float: right;
+  display: right; /* this makes our navbar horizontal, without it it will be vertical (block) by default */
+  margin-right: 30px;
+}
 
-  img {
-      max-width: 100%;
-      display: block;
-  }
-  
-  .logo {
-    font-size: 200%;
-    padding: 50px 20px;
-    margin: 0 auto;
-    max-width: 980px;
-  }
+li a {
+  outline: none;
+  border: none;
+  color: white; /*text color of the navbar links*/
+  font-family: "Protest Strike", sans-serif;
+  text-align: center;
+  padding: 10px;
 
-  .navigation {
-    width: 100%;
-    justify-content: space-evenly;
-    display: flex;
+  /* get ride of underline */
+  text-decoration: none;
+  font-size: 16px;
+  transition: font-size 0.5s ease;
+}
 
-  }
-  
+li a:focus {
+  outline: none; /* Removes the focus outline */
+}
+
+li a:hover {
+  background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
+  font-size: 20px;
+  color:rgb(0, 0, 0);
+}
+
   
   .grid {
     margin: 0 auto;
@@ -54,24 +50,6 @@ body {
     max-width: 980px;
   }
   
-  nav {
-    background-color: #000;
-    padding: .5em;
-    z-index: 1000;
-  }
-  
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    justify-content: space-between 
-  }
-  
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: .5em 1em;
-  }
   
   .photos {
     display: grid;
@@ -103,7 +81,7 @@ body {
 
   .some-page-wrapper {
     margin: 15px;
-    background-color: rgb(255, 255, 255);
+    background-color: #B3D6C6;
   }
   
   .row {

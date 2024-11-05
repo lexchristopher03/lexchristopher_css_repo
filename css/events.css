@@ -14,26 +14,6 @@ body {
   background-color: #B3D6C6;
 }
 
-.title-container {
-  text-align: center; /* Center the title */
-  margin: 20px 0; /* Space above and below the title */
-}
-.hero-section {
-  background: url('/images/heroImage.jpg') no-repeat center center/cover;
-  color: #fff;
-  text-align: center;
-  padding: 100px 20px;
-}
-
-.title-container h1 {
-  font-size: 5em; /* Adjust the size of the title */
-  font-weight: 700; /* Make the title bold */
-  color: white;
-  /* Outline color and width */
-  -webkit-text-stroke: 1px #A8CCC9;
-  text-shadow: none; /* Disable text shadow if you have any */
-}
-
 li {
   float: right;
   display: right; /* this makes our navbar horizontal, without it it will be vertical (block) by default */
@@ -61,15 +41,9 @@ li a:focus {
 li a:hover {
   background-color: #75B9BE; /*background color of the navbar when hovering over a link*/
   font-size: 20px;
-  color:black;
+  color:rgb(0, 0, 0);
 }
 
-
-/* when you click on text */
-li a:active {
-  background-color: white;
-  color: lightblue;
-}
 .grid{
   font-size: 150;
   margin: 0 auto;
